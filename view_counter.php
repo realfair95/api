@@ -1,5 +1,5 @@
 <?php 
-require 'db.php';
+require 'configuration.php';
 include 'controllers/Web.php';
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 	//get submitted data

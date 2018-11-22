@@ -4,7 +4,7 @@ getTopStories();
 //get top videos
 function getTopStories()
 {	
-	require("db.php");
+	require("configuration.php");
 	mysqli_query($con,'SET CHARACTER SET utf8');
 	$query=mysqli_query($con,"SELECT DISTINCT * FROM spip_articles WHERE id_secteur=1  AND ((id_rubrique!=19 AND id_rubrique!=23) AND statut='publie') ORDER BY date DESC LIMIT 20");
 						  
