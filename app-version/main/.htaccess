@@ -1,0 +1,11 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite for login.php
+RewriteRule ^access$ login.php [NC,L]
+
+# Rewrite for index.php
+RewriteRule ^dashboard$ index.php [NC,L]
+
+# Rewrite for logout.php
+RewriteRule ^logoff$ logout.php [NC,L]
